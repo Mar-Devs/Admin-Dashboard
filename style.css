@@ -3,10 +3,12 @@
 }
 
 body{
-    padding:0;
+    padding:0px;
     margin:0;
     font-family: "Roboto";
     height: 100vh;
+    background-color: lightgray;
+    box-sizing: border-box;
 }
 
 .container{
@@ -17,7 +19,7 @@ body{
     height: 100%;
 }
 
-.homeicon, .profileicon, .messageicon, .clockicon, .taskicon, .communityicon, .dashboardicon, .settingsicon, .supporticon, .privacyicon{
+.homeicon, .profileicon, .messageicon, .clockicon, .taskicon, .communityicon, .dashboardicon, .settingsicon, .supporticon, .privacyicon, .searchicon, .noticon{
     height: auto;
     width: 25px;
 }
@@ -54,7 +56,7 @@ body{
     margin: 0px;
 }
 
-.dashboard , p {
+.dashboard  p {
   padding: 0px;
   margin-top: 0px;
   margin-left: 0px;
@@ -84,3 +86,113 @@ img{
     font-family: "Roboto";
     src: url("assets/fonts/Roboto-VariableFont_wdth,wght.ttf");
 }
+
+.navbar{
+    padding:15px;
+    background-color: white;
+    grid-column: 3 / 11;
+    grid-row: 1/4;
+    box-shadow: 0px 2px 1px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav_top{
+    display: flex;
+}
+
+.searchbar{
+    display: flex;
+    width: 70%;
+    height: auto;
+    align-items: center;
+}
+
+.bar{
+    width: 600px;
+    height: 50%;
+    background-color: #d5dee3;
+    border: none;
+    border-radius: 10px;
+}
+
+.icons{
+    display: flex;
+    margin-left: 25px;
+}
+
+.profileimg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.nav_bottom{
+    display: flex;
+    width: 100%;
+    max-height: 80%;
+    justify-content: space-between;
+    margin-top: -100px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    grid-column: 6 / -1;
+} 
+
+button{
+    background-color: var(--blue);
+    border: none;
+    color:white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    
+}
+
+.img{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons2{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    max-height: 90%;
+}
+
+.profileimg{
+    grid-column: 1 / 2;
+    grid-row:1/2;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.text{
+    padding:0px;
+    display: inline;
+    margin-right: -4px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+
