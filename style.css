@@ -119,12 +119,30 @@ img{
 .icons{
     display: flex;
     margin-left: 25px;
+    align-items: center;
 }
 
-.profileimg{
-    width: 4rem;
+.profileimg {
+    width: 100%;
+    height: 100%;
+}
+
+.profileimg-container{
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    overflow: hidden;
     object-fit: cover;
+    margin: 10px;
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 10px; 
 }
 
 .nav_bottom{
@@ -162,7 +180,6 @@ button{
 .img{
     grid-column: 1/2;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -199,32 +216,6 @@ button{
     margin: 25px;
 }
 
-/* .card1 , .card2 , .card3 , .card4 , .card5 , .card6{
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-    box-shadow: 2px 2px 2px gray;
-} */
-
-/* .icons3{
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 20px;
-}
-
-.header{
-    font-weight: 700;
-}
-
-.card-body{
-    color: #7d7777;
-} */
-
 .project{
     grid-column: 1 / 6;
     grid-row: 1 / 8;
@@ -247,10 +238,17 @@ button{
     border-radius: 10px;
     box-shadow: 2px 2px 2px gray;
     padding: 10px;
+    align-items: center;
 }
 
 .card1{
         grid-column: 1/2;
+}
+
+.color-strip{
+    height: 100%;
+    width: 20px;
+    background-color: palegoldenrod;
 }
 
 .card-title{
@@ -266,4 +264,81 @@ button{
     justify-content: flex-end;
     margin-top: 25px;
 }
+
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.trending-img{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.trending-card1, .trending-card2, .trending-card3, .trending-card4{
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trending-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-body p{
+  margin-bottom: -5px;
+}
+
+.trendig-container{
+    background-color: white;
+    gap: 40px;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.trending{
+    grid-column: 7 / -1;
+    grid-row: 4 / -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.p{
+    font-size: 12px;
+    color: gray;
+}
+
+.trending-header{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.at{
+    font-weight: 500;
+    color:black
+}
+
 
