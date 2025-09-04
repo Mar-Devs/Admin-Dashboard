@@ -238,7 +238,7 @@ button{
     border-radius: 10px;
     box-shadow: 2px 2px 2px gray;
     padding: 10px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .card1{
@@ -341,4 +341,39 @@ button{
     color:black
 }
 
+.announcment{
+    grid-column: 7/ 9;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.ann-container{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ann-container-title{
+    font-weight: 500;
+    margin-bottom: -5px;
+    font-size: 20px;
+}
+
+.ann-container-body{
+    color: darkgray;
+    font-size: 15px;
+}
+
+.line{
+    color: lightgray;
+    background-color: lightgray;
+    height: 2px;
+}
+
+.text h5{
+    margin-bottom: -5px;
+}
